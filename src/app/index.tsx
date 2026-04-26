@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import Titulo from '@/components/titulo';
+import Titulo from '@/components/Titulo';
 import { useState } from 'react';
 
 export default function App(){
