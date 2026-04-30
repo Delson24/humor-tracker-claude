@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import Titulo from '@/components/Titulo';
 import { useState } from 'react';
 
@@ -9,6 +9,11 @@ export default function App(){
     <View style={styles.container}> 
       <Titulo texto="Como te sentes hoje?" />
       <Text>{humor}</Text>
+    
+        <TouchableOpacity onPress ={() => setHumor('😊')}>
+          <Text>😊</Text>
+        </TouchableOpacity>
+      
     </View>
   );
 } 
